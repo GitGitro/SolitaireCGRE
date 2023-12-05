@@ -14,7 +14,7 @@
   limitations under the License.
 */
 
-package net.sourceforge.solitaire_cg;
+package net.sourceforge.solitaire_cg_re;
 
 // Storage to maintain state over a configuration/orientation change
 public class ConfigWrapper {

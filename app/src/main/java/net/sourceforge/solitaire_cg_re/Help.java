@@ -14,11 +14,10 @@
   limitations under the License.
 */
 
-package net.sourceforge.solitaire_cg;
+package net.sourceforge.solitaire_cg_re;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.preference.PreferenceManager;
 import android.view.KeyEvent;
@@ -71,7 +70,7 @@ public class Help extends Activity {
     //   mWebView.loadUrl("file:///android_res/raw/help_contents.txt");
     String helpText = "<html><body>"
       + "<a name=\"top\"></a>"
-      + "<h1>" + String.format(this.getString(R.string.help_window_title), SolitaireCG.VERSION_NAME) + "</h1>"
+      + "<h1>" + String.format(this.getString(R.string.help_window_title), SolitaireCGRE.VERSION_NAME) + "</h1>"
       + Utils.readRawTextFile(this, R.raw.help_contents).replace("\n"," ")
         // Append README file
       + "<hr>"

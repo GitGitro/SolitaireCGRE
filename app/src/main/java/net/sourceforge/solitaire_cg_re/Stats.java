@@ -15,7 +15,7 @@
 
   Modified by Curtis Gedak 2015, 2016
 */
-package net.sourceforge.solitaire_cg;
+package net.sourceforge.solitaire_cg_re;
 
 import android.content.SharedPreferences;
 import android.view.KeyEvent;
@@ -26,7 +26,7 @@ import android.widget.TextView;
 
 public class Stats {
 
-  public Stats(final SolitaireCG solitaire, final SolitaireView view) {
+  public Stats(final SolitaireCGRE solitaire, final SolitaireView view) {
 
     solitaire.setContentView(R.layout.stats);
     View statsView = (View) solitaire.findViewById(R.id.stats_view);

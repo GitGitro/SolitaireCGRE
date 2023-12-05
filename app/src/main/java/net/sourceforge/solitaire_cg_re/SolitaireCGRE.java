@@ -15,7 +15,7 @@
 
   Modified by Curtis Gedak 2015, 2016, 2017
 */
-package net.sourceforge.solitaire_cg;
+package net.sourceforge.solitaire_cg_re;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -28,7 +28,6 @@ import android.util.Log;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.SubMenu;
 import android.view.View;
@@ -37,7 +36,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 // Base activity class.
-public class SolitaireCG extends Activity {
+public class SolitaireCGRE extends Activity {
 
   public static String VERSION_NAME = "";
 

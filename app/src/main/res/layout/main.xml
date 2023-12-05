@@ -21,7 +21,7 @@
     android:orientation="horizontal"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent" >
-    <net.sourceforge.solitaire_cg.SolitaireView
+    <net.sourceforge.solitaire_cg_re.SolitaireView
       android:id="@+id/solitaire"
       android:layout_width="fill_parent"
       android:layout_height="fill_parent" />

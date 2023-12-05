@@ -15,7 +15,7 @@
 
   Modified by Curtis Gedak 2015, 2016, 2017
 */
-package net.sourceforge.solitaire_cg;
+package net.sourceforge.solitaire_cg_re;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -194,7 +194,7 @@ public class SolitaireView extends View {
   }
 
   public Context GetContext() { return mContext; }
-  public SharedPreferences GetSettings() { return ((SolitaireCG)mContext).GetSettings(); }
+  public SharedPreferences GetSettings() { return ((SolitaireCGRE)mContext).GetSettings(); }
   public DrawMaster GetDrawMaster() { return mDrawMaster; }
   public Rules GetRules() { return mRules; }
   public void ClearGameStarted() { mGameStarted = false; }

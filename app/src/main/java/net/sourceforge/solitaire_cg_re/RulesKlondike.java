@@ -15,7 +15,7 @@
 
   Modified by Curtis Gedak 2015, 2016
 */
-package net.sourceforge.solitaire_cg;
+package net.sourceforge.solitaire_cg_re;
 
 import android.os.Bundle;
 

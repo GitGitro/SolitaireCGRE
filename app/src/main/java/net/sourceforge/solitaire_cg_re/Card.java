@@ -15,7 +15,7 @@
 
   Modified by Curtis Gedak 2015, 2017
 */
-package net.sourceforge.solitaire_cg;
+package net.sourceforge.solitaire_cg_re;
 
 class Card {
 

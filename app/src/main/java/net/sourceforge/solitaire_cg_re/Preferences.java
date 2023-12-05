@@ -14,11 +14,8 @@
   limitations under the License.
 */
 
-package net.sourceforge.solitaire_cg;
+package net.sourceforge.solitaire_cg_re;
 
-import net.sourceforge.solitaire_cg.R;
-
-import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;

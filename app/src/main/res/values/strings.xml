@@ -17,7 +17,7 @@
   Modified by Curtis Gedak 2015, 2016, 2017
   -->
 <resources>
-    <string name="app_name">SolitaireCG</string>
+    <string name="app_name">SolitaireCGRE</string>
     <string name="menu_bakersgame">Freecell (by suit: Baker\'s)</string>
     <string name="menu_blackwidow">Spider (1 suit: black widow)</string>
     <string name="menu_fortythieves">Forty Thieves</string>
