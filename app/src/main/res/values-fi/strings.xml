@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2016 Jack Phoenix <jack@countervandalism.net>
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+  Modified by Curtis Gedak 2016
+  -->
+<resources>
+    <string name="app_name">SolitaireCG</string>
+    <string name="menu_bakersgame">Vapaakenttä (maan mukaan: Bakerin peli)</string>
+    <string name="menu_blackwidow">Hämähäkki (1 maa: musta leski)</string>
+    <string name="menu_fortythieves">40 varasta</string>
+    <string name="menu_freecell">Vapaakenttä (vaihtoehtoisen värin mukaan)</string>
+    <string name="menu_golf">Golf (ei kuninkaan päälle rakentamista)</string>
+    <string name="menu_golf_wrapcards">Golf (sido kortit)</string>
+    <string name="menu_klondike_dealone">Klondike (jaa 1)</string>
+    <string name="menu_klondike_dealthree">Klondike (jaa 3)</string>
+    <string name="menu_spider">Hämähäkki (4 maata)</string>
+    <string name="menu_tarantula">Hämähäkki (2 maata: tarantella)</string>
+    <string name="menu_tripeaks">TriPeaks (ei kuninkaan päälle rakentamista)</string>
+    <string name="menu_tripeaks_wrapcards">TriPeaks (sido kortit)</string>
+    <string name="menu_vegas_dealone">Vegas (jaa 1)</string>
+    <string name="menu_vegas_dealthree">Vegas (jaa 3)</string>
+    <string name="menu_selectgame">Valitse peli</string>
+    <string name="menu_new">Uusi</string>
+    <string name="menu_restart">Aloita alusta</string>
+    <string name="menu_options">Asetukset</string>
+    <string name="menu_stats">Tilastot</string>
+    <string name="menu_help">Ohjeet</string>
+    <string name="menu_exit">Poistu</string>
+    <string name="menu_blank"></string>
+    <string name="solitaire_layout_text_text"></string>
+
+    <!-- Shown on the options preference screen -->
+    <string name="options_title">Asetukset</string>
+    <string name="big_cards">Isot kortit</string>
+    <string name="big_cards_desc">Näytä yksinkertainen korttitaide näkyvyyden parantamiseksi</string>
+    <string name="display_time">Näytä aika</string>
+    <string name="display_time_desc">Näytä pelin alkamisesta kulunut aika</string>
+    <string name="auto_move">Automaattinen siirto</string>
+    <string name="auto_move_desc">Automaattisesti siirrä mahdolliset kortit pinoihin</string>
+    <string name="always">Aina</string>
+    <string name="fling_only">Vain heilautettaessa</string>
+    <string name="never">Ei koskaan</string>
+    <string name="lock_landscape">Lukitse vaakatasoon</string>
+    <string name="lock_landscape_desc">Lukitse peli vaakasuunnassa</string>
+
+    <!-- Shown in the game if needed -->
+    <string name="toast_blank_menu">Tämä valikko on jätetty tarkoituksella tyhjäksi.</string>
+    <string name="toast_restart_invalid">Peli loppui. Aloittaminen alusta ei ole mahdollista.</string>
+    <string name="toast_use_start_menu">Peli loppui. Käytä valikkoa aloittaaksesi uuden pelin.</string>
+    <string name="toast_no_undo_left">Kumoaminen ei ole mahdollista.</string>
+
+    <!-- Shown on the splash screen at first startup -->
+    <string name="splash_text">
+\n\n\n\n\n\n\n\n
+VINKKI:  Paina pitkään ^-merkkiä ruudun keskiosan alalaidassa tuodaksesi esiin vaihtoehtoisen valikon.
+    </string>
+
+    <!-- Shown when a game is won -->
+    <string name="win_text">Voitit!\n\nKäytä valikkoa aloittaaksesi uuden pelin.</string>
+
+    <!-- Messages shown on the help window -->
+
+    <!-- The argument is the version number of the SolitaireCG application -->
+    <string name="help_window_title">SolitaireCG:n version %s ohjeet</string>
+    <string name="readme_header">Lähdekoodin README-tiedosto</string>
+    <string name="copying_header">Lähdekoodin COPYING-tiedosto</string>
+
+    <!-- Messages shown on the stats window -->
+
+    <string name="accept">Hyväksy</string>
+    <string name="clear">Tyhjennä tilastot</string>
+
+    <!-- The argument is the pretty game name, such as "Klondike (Dealing Three)" or "Golf" -->
+    <string name="stats_for_game">Tilastot - %s</string>
+
+    <string name="stats_wins_and_attempts">Voittoja: %1$d Yrityksiä: %2$d</string>
+    <string name="stats_winning_percentage">Voittoprosentti: %s%%</string>
+    <string name="stats_fastest_time">Nopein aika: %s</string>
+
+    <!-- The argument is the user's high score as an integer -->
+    <string name="stats_high_score">Ennätyspisteet: %s</string>
+</resources>

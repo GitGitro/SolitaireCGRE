@@ -1,0 +1,7 @@
+Changes with Release v3.4.1 on Dec 18, 2020
+<ul>
+  <li>Upgrade to gradle 5.4.1 build process</li>
+  <li>Add Fastlane file structure for F-Droid app store</li>
+  <li>Update README to place most relevant information at top</li>
+</ul>
+

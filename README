@@ -1,0 +1,213 @@
+Updated README by Curtis Gedak
+==============================
+
+SolitaireCG is Ken Magic's "Solitaire" adapted to work on devices with
+few hardware buttons.  Original author is still Ken Magic.
+
+Solitaire Card Games include Klondike (regular solitaire), Vegas,
+Spider, Golf, Freecell, Forty Thieves, TriPeaks, and variations of
+these games.
+
+Features include multi-level undo, animated card movement,
+statistics/score tracking, and large card art option.
+
+SolitaireCG is available under Apache License 2.0, see COPYING.
+See the source code for copyright owners.
+
+To report an issue, download older APK files, and learn more about
+SolitaireCG see the project web site:
+
+    https://solitairecg.sourceforge.io/
+
+Change Log (in reverse chronological order)
+-------------------------------------------
+
+### Release v3.4.1 on Dec 20, 2020
+  * Upgrade to gradle 5.4.1 build process
+  * Add Fastlane file structure for F-Droid app store
+  * Update README to place most relevant information at top
+
+### Release v3.4 on Oct 5, 2020
+  * Reduce background dimming when displaying You Win message
+  * Fix You Win message does not always display on some devices
+  * Initialise text color to white
+
+### Release v3.3 on Oct 19, 2018
+  * Ensure help shown as html for Android 4.3 and lower (API 18 Jelly Bean)
+  * Update web site link from http to https
+  * Fix help file hyperlinks and add back-to-top links
+  * Improve visibility of suits for landscape orientation large card art
+  * Migrate source code from ant to gradle build process
+
+### Release v3.2.1 on Dec 14, 2017
+  * Add French (fr) translation
+  * Update Finnish (fi) translation
+
+### Release v3.2 on Feb 27, 2017
+  * Add lock landscape orientation option to help
+  * Update German (de) translation
+  * Update Esperanto (eo) and Polish (pl) translations
+  * Add lock landscape orientation option
+
+### Release v3.1 on Feb 9, 2017
+  * Fix forty thieves logic for single step move of a valid card sequence
+
+### Release v3.0 on Feb 7, 2017
+  * Fix freecell logic for single step move of a valid card sequence
+  * Improve readability of portrait cards
+  * Fix font thickness consistency for xxxhdpi medium fonts
+  * Enable rotate of win screen to start new game
+  * Remove no longer used suit sequence stack code
+  * Remove no longer used spider stack code
+  * Prevent vertically scrolling all cards off screen
+  * Update Esperanto (eo) translation
+  * Migrate help view to Android activity screen
+  * Retain active screen on device rotation
+  * Shrink anchor and card count indicators to fit small screens
+  * Add support for portrait orientation for Android 4.0+ (ICS - API 14+)
+
+### Release v2.9 on Dec 1, 2016
+  * Add blank menu items to workaround inaccessible menu items issue
+  * Disable menu on help and stats screen
+  * Update German (de) translation
+  * Add Esperanto (eo) and Polish (pl) translations
+
+### Release v2.8.1 on Nov 14, 2016
+  * Undo force options menu for context menu for Android 6.0+ (API 23+)
+  * Fix small html tag error in help rules
+
+### Release v2.8 on Nov 13, 2016
+  * Restore automatic save of game statistics and settings
+  * Group Freecell with variant Black Widow, add descriptions to menu
+  * Add Vegas game scoring details to help
+  * Force options menu for context menu for Android 6.0+ (API 23+)
+
+### Release v2.7 on Oct 31, 2016
+  * Add German (de) translation
+  * Ensure cards overlap in TriPeaks games
+  * Migrate options screen to proper Android preferences activity screen
+  * Remove duplicated game names from strings.xml
+  * Improve recognition of Spider game variants Black Widow and Tarantula
+  * Restore ability to undo moves after application exit
+
+### Release v2.6.1 on Sep 5, 2016
+  * Fix small html tag error in help rules
+
+### Release v2.6 on Sep 5, 2016
+  * Update Finnish translation
+  * Add TriPeaks (wrap cards) solitaire game and help rules
+  * Add Golf (wrap cards) solitaire game and help rules
+  * Remove duplicate word from Stats page
+  * Add Exit entry to main menu
+
+### Release v2.5 on Apr 15, 2016
+  * Adjust card touch sensitivity based on screen DPI
+
+### Release v2.4 on Mar 30, 2016
+  * Adjust alternate menu long press detection range to the left
+  * Update README
+  * Ensure alternate menu caret placed between card anchor columns
+  * Add Finnish translation
+  * Enable translation of text strings
+
+### Release v2.3 on Dec 31, 2015
+  * Add Exit entry to alternate menu
+  * Update eclipse files and remove unused code and imports
+  * Add single tap card to Golf game to send card home
+  * Add TriPeaks solitaire game and help rules
+
+### Release v2.2 on Dec 11, 2015
+  * Add letter A to center of empty card foundations
+  * Add visible card count to deck and remove other count indicators
+  * Change auto move option default from always to fling only
+  * Migrate Spider options to Spider, Tarantula and Black Widow menu items
+  * Migrate Freecell options to Freecell and Baker's Game menu items
+  * Migrate Solitaire options to Klondike and Vegas game menu items
+  * Add menu item New to start a new game of the same solitaire type
+  * Rename menu item New Game to Select Game
+  * Make spider deck visible and remove deal menu item
+  * Add Golf solitaire game and help rules
+  * Sort card game names and refactor into separate files
+  * Remove Quit and Save&Quit menu options
+  * Add text indication when no undo left
+  * Add general features, terminology and game rules to help
+  * Move readme and copying from separate menu items into help
+  * Move help and version to html in scrollable webview
+  * Make splash screen tip of long press for alternate menu
+
+### Release v2.1 on Nov 18, 2015
+  * Add xlarge screen xhdpi graphics -> xxxhdpi graphics
+  * Add large screen xxhdpi graphics -> xxxhdpi graphics
+  * Add xxxhdpi high resolution graphic images for cards
+  * Simulate Android scaling of original game card dimensions
+  * Make card animation speed the same for all screen resolutions
+  * Add long press on bottom center of screen to invoke alternate menu
+
+### Release v2.0.1 on Jul 7, 2015
+  * Use only png (no xml links) for launcher icons
+
+### Release v2.0 on Jul 6, 2015
+  * Add xlarge screen hdpi graphics -> xxhdpi graphics
+  * Add xlarge screen ldpi graphics -> hdpi graphics
+  * Add xlarge screen (mdpi) graphics -> xhdpi graphics
+  * Add large screen xhdpi graphics -> xxhdpi graphics
+  * Add large screen hdpi graphics -> xhdpi graphics
+  * Add large screen ldpi graphics -> (mdpi) graphics
+  * Add large screen (mdpi) graphics -> hdpi graphics
+  * Add xxhdpi high resolution graphic images for cards
+  * Remove unnecessary draw cards method call
+  * Add hdpi images for all suits and all fonts for cards
+  * Add xhdpi high resolution graphic images for cards
+  * Add ldpi big fonts, big suits and suits images
+  * Migrate drawable to drawable-nodpi and add xml links to images
+  * Base card build and position math on dpi
+  * Cleanup unused code, resources and imports
+  * Remove hard code screen size
+  * Set minimum to Android 1.6 to support multiple screen sizes and densities
+  * Remove hard code card dimensions
+  * Remove hard code placement of bitmaps when building card image
+
+### Release v1.15.2 on Apr 1, 2015
+  * Show use start menu message if game won and help selected
+  * Place Change Log in reverse chronological order in README only
+
+### Release v1.15.1 on Mar 21, 2015
+  * Set default Freecell option to build by alternate color
+
+### Release v1.15 on Mar 19, 2015
+  * Limit stats display of winning percentage to two decimal places
+  * Avoid game hang in pick card from stack mode and restart selected
+  * Show restart unavailable message if game won and restart selected
+  * Add Freecell option build by suit Baker's game
+  * Prevent illegal N+1 multi-card drop on empty stack in Forty Thieves
+
+### Release v1.14 on Mar 6, 2015
+  * Replace icon: new file solitairecg_icon.png, remove solitaire_icon.png
+  * Add application required permissions to README
+  * Add COPYING menu display - new files: copying.xml, Copying.java
+  * Add README menu display - new files: readme.xml, Readme.java, Utils.java
+  * Avoid card loss if spider deal interrupted
+  * Add Deal menu entry
+  * Fork project from Solitaire to SolitaireCG
+  * Add .gitignore file
+  * Upgrade project from an older version of the Android SDK
+
+
+Original README by Ken Magic
+============================
+
+Simple solitaire game.
+
+Currently documentation is limited but I will add comments to the source and
+detail the structure in here.
+
+Build Instructions:
+------------------
+I do not use eclipse so I can't really guarantee that it will build in that
+environment.
+
+First off you need to download the SDK from http://code.google.com/android.
+Once installed you need to modify solitaire's build.xml file to include the
+path to the SDK (Two lines near the top). Then running ant should complete the
+job. If you have difficulties, try building a sample program from
+code.google.com first which has a bunch of detail and troubleshooting info.

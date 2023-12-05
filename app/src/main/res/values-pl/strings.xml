@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2016 Verdulo
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+<resources>
+    <string name="app_name">GK Pasjans</string>
+    <string name="menu_bakersgame">Freecell (wg. koloru: Bakera)</string>
+    <string name="menu_blackwidow">Pająk (1 kolor: czarna wdowa)</string>
+    <string name="menu_fortythieves">Czterdziestu rozbójników</string>
+    <string name="menu_freecell">Freecell (naprzemienne kolory)</string>
+    <string name="menu_golf">Golf (nie na króla)</string>
+    <string name="menu_golf_wrapcards">Golf (zawijany)</string>
+    <string name="menu_klondike_dealone">Klondike (po 1 karcie)</string>
+    <string name="menu_klondike_dealthree">Klondike (po 3 karty)</string>
+    <string name="menu_spider">Pająk (4 kolory)</string>
+    <string name="menu_tarantula">Pająk (2 kolory: tarantula)</string>
+    <string name="menu_tripeaks">Trzy wieże (nie na króla)</string>
+    <string name="menu_tripeaks_wrapcards">Trzy wieże (zawijany)</string>
+    <string name="menu_vegas_dealone">Vegas (po 1 karcie)</string>
+    <string name="menu_vegas_dealthree">Vegas (po 3 karty)</string>
+    <string name="menu_selectgame">Wybór gry</string>
+    <string name="menu_new">Nowa</string>
+    <string name="menu_restart">Restart</string>
+    <string name="menu_options">Opcje</string>
+    <string name="menu_stats">Statystyki</string>
+    <string name="menu_help">Pomoc</string>
+    <string name="menu_exit">Wyjście</string>
+    <string name="menu_blank"></string>
+    <string name="solitaire_layout_text_text"></string>
+
+    <!-- Shown on the options preference screen -->
+    <string name="options_title">Opcje</string>
+    <string name="big_cards">Duże karty</string>
+    <string name="big_cards_desc">Wyświetlaj uproszczone wzory kart dla zwiększonej czytelności</string>
+    <string name="display_time">Pokaż czas</string>
+    <string name="display_time_desc">Wyświetlaj czas od rozpoczęcia gry</string>
+    <string name="auto_move">Auto-uzupełnianie</string>
+    <string name="auto_move_desc">Jeżeli to możliwe, automatycznie przenoś karty na stosy</string>
+    <string name="always">Zawsze</string>
+    <string name="fling_only">Tylko przy wrzucaniu</string>
+    <string name="never">Nigdy</string>
+    <string name="lock_landscape">Wymuś poziomo</string>
+    <string name="lock_landscape_desc">Wymusza wyświetlanie gry w trybie poziomym</string>
+
+    <!-- Shown in the game if needed -->
+    <string name="toast_blank_menu">Ten element menu pozostał celowo pusty.</string>
+    <string name="toast_restart_invalid">Gra skończona. Restart niemożliwy.</string>
+    <string name="toast_use_start_menu">Gra skończona. Użyj menu aby rozpocząć nową.</string>
+    <string name="toast_no_undo_left">Cofnięcie niemożliwe.</string>
+
+    <!-- Shown on the splash screen at first startup -->
+    <string name="splash_text">
+\n\n\n\n\n\n\n\n
+PORADA:  Przytrzymaj ^ na środkowym dole ekranu aby wyświetlić alternatywne menu.
+    </string>
+
+    <!-- Shown when a game is won -->
+    <string name="win_text">Wygrałeś!\n\nUżyj menu aby rozpocząć nową grę.</string>
+
+    <!-- Messages shown on the help window -->
+
+    <!-- The argument is the version number of the SolitaireCG application -->
+    <string name="help_window_title">Pomoc GK Pasjans %s</string>
+    <string name="readme_header">Plik README z kodu źródłowego</string>
+    <string name="copying_header">Plik COPYING z kodu źródłowego</string>
+
+    <!-- Messages shown on the stats window -->
+
+    <string name="accept">Zamknij</string>
+    <string name="clear">Wyczyść statystyki</string>
+
+    <!-- The argument is the pretty game name, such as "Klondike (Dealing Three)" or "Golf" -->
+    <string name="stats_for_game">Statystyki gry %s</string>
+
+    <string name="stats_wins_and_attempts">Wygranych: %1$d Gier: %2$d</string>
+    <string name="stats_winning_percentage">Procent wygranych: %s%%</string>
+    <string name="stats_fastest_time">Najszybszy czas: %s</string>
+
+    <!-- The argument is the user's high score as an integer -->
+    <string name="stats_high_score">Najlepszy wynik: %s</string>
+</resources>

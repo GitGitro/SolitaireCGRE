@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2016 Verdulo
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+<resources>
+    <string name="app_name">Paciencludo</string>
+    <string name="menu_bakersgame">Freecell (laŭ emblemo: Bakera)</string>
+    <string name="menu_blackwidow">Araneo nigra (1 emblemo)</string>
+    <string name="menu_fortythieves">Kvardek rabistoj</string>
+    <string name="menu_freecell">Freecell (laŭ alikoloro)</string>
+    <string name="menu_golf">Golfo (ne sur reĝo)</string>
+    <string name="menu_golf_wrapcards">Golfo (remeti kartojn)</string>
+    <string name="menu_klondike_dealone">Klondiko (po 1 karto)</string>
+    <string name="menu_klondike_dealthree">Klondiko (po 3 kartoj)</string>
+    <string name="menu_spider">Araneo (4 emblemoj)</string>
+    <string name="menu_tarantula">Araneo (2 emblemoj: tarantulo)</string>
+    <string name="menu_tripeaks">TriPintoj (ne sur reĝo)</string>
+    <string name="menu_tripeaks_wrapcards">TriPintoj (remeti kartojn)</string>
+    <string name="menu_vegas_dealone">Vegaso (po 1 karto)</string>
+    <string name="menu_vegas_dealthree">Vegaso (po 3 kartoj)</string>
+    <string name="menu_selectgame">Elekti ludon</string>
+    <string name="menu_new">Nova</string>
+    <string name="menu_restart">Ludi denove</string>
+    <string name="menu_options">Agordoj</string>
+    <string name="menu_stats">Statistiko</string>
+    <string name="menu_help">Helpo</string>
+    <string name="menu_exit">Eliri</string>
+    <string name="menu_blank"></string>
+    <string name="solitaire_layout_text_text"></string>
+
+    <!-- Shown on the options preference screen -->
+    <string name="options_title">Agordoj</string>
+    <string name="big_cards">Grandaj kartoj</string>
+    <string name="big_cards_desc">Montras simpligitajn kart-specojn por plibonigi videblecon</string>
+    <string name="display_time">Montri tempon</string>
+    <string name="display_time_desc">Montras pasintan tempon ekde lud-starto</string>
+    <string name="auto_move">Mem-movo</string>
+    <string name="auto_move_desc">Aŭtomate movas eblajn kartojn sur stakojn</string>
+    <string name="always">Ĉiam</string>
+    <string name="fling_only">Nur je surstakigo</string>
+    <string name="never">Neniam</string>
+    <string name="lock_landscape">Devigi horizontalan</string>
+    <string name="lock_landscape_desc">Devigas montrado de ludo en horizontala orientiĝo</string>
+
+    <!-- Shown in the game if needed -->
+    <string name="toast_blank_menu">Tiu ĉi menuero estas intence malplena.</string>
+    <string name="toast_restart_invalid">Ludo finita. Reprovo nedisponeblas.</string>
+    <string name="toast_use_start_menu">Ludo finita. Uzu menuon por ekigi novan ludon.</string>
+    <string name="toast_no_undo_left">Nenia lasta movo.</string>
+
+    <!-- Shown on the splash screen at first startup -->
+    <string name="splash_text">
+\n\n\n\n\n\n\n\n
+KONSILO:  Premtenu ^ ĉe suba centro de ekrano por montri alternativan menuon.
+    </string>
+
+    <!-- Shown when a game is won -->
+    <string name="win_text">Vi venkis!\n\nUzu la menuon por eki novan ludon.</string>
+
+    <!-- Messages shown on the help window -->
+
+    <!-- The argument is the version number of the SolitaireCG application -->
+    <string name="help_window_title">Helpo por Paciencludo %s</string>
+    <string name="readme_header">Dosiero README el fontkodo</string>
+    <string name="copying_header">Dosiero COPYING el fontkodo</string>
+
+    <!-- Messages shown on the stats window -->
+
+    <string name="accept">Fermi</string>
+    <string name="clear">Vakigi statistikon</string>
+
+    <!-- The argument is the pretty game name, such as "Klondike (Dealing Three)" or "Golf" -->
+    <string name="stats_for_game">Statistiko por %s</string>
+
+    <string name="stats_wins_and_attempts">Venkoj: %1$d Provoj: %2$d</string>
+    <string name="stats_winning_percentage">Elcento da venkoj: %s%%</string>
+    <string name="stats_fastest_time">Plej bona tempo: %s</string>
+
+    <!-- The argument is the user's high score as an integer -->
+    <string name="stats_high_score">Plej multe da poentoj: %s</string>
+</resources>

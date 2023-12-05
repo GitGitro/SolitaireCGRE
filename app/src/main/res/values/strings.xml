@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2008 Google Inc.
+  
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+       http://www.apache.org/licenses/LICENSE-2.0
+  
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+  Modified by Curtis Gedak 2015, 2016, 2017
+  -->
+<resources>
+    <string name="app_name">SolitaireCG</string>
+    <string name="menu_bakersgame">Freecell (by suit: Baker\'s)</string>
+    <string name="menu_blackwidow">Spider (1 suit: black widow)</string>
+    <string name="menu_fortythieves">Forty Thieves</string>
+    <string name="menu_freecell">Freecell (by alt-color)</string>
+    <string name="menu_golf">Golf (no build on king)</string>
+    <string name="menu_golf_wrapcards">Golf (wrap cards)</string>
+    <string name="menu_klondike_dealone">Klondike (deal 1)</string>
+    <string name="menu_klondike_dealthree">Klondike (deal 3)</string>
+    <string name="menu_spider">Spider (4 suits)</string>
+    <string name="menu_tarantula">Spider (2 suits: tarantula)</string>
+    <string name="menu_tripeaks">TriPeaks (no build on king)</string>
+    <string name="menu_tripeaks_wrapcards">TriPeaks (wrap cards)</string>
+    <string name="menu_vegas_dealone">Vegas (deal 1)</string>
+    <string name="menu_vegas_dealthree">Vegas (deal 3)</string>
+    <string name="menu_selectgame">Select Game</string>
+    <string name="menu_new">New</string>
+    <string name="menu_restart">Restart</string>
+    <string name="menu_options">Options</string>
+    <string name="menu_stats">Stats</string>
+    <string name="menu_help">Help</string>
+    <string name="menu_exit">Exit</string>
+    <string name="menu_blank"></string>
+    <string name="solitaire_layout_text_text"></string>
+
+    <!-- Shown on the options preference screen -->
+    <string name="options_title">Options</string>
+    <string name="big_cards">Large Card Art</string>
+    <string name="big_cards_desc">Show simple card art for improved visibility</string>
+    <string name="display_time">Display Time</string>
+    <string name="display_time_desc">Show elapsed time since game started</string>
+    <string name="auto_move">Auto Move</string>
+    <string name="auto_move_desc">Automatically move possible cards to foundations</string>
+    <string name="always">Always</string>
+    <string name="fling_only">Fling Only</string>
+    <string name="never">Never</string>
+    <string name="lock_landscape">Lock Landscape</string>
+    <string name="lock_landscape_desc">Lock game in landscape orientation</string>
+
+    <!-- Shown in the game if needed -->
+    <string name="toast_blank_menu">This menu item intentionally left blank.</string>
+    <string name="toast_restart_invalid">Game over. Restart not available.</string>
+    <string name="toast_use_start_menu">Game over. Use menu to start new game.</string>
+    <string name="toast_no_undo_left">No undo left.</string>
+
+    <!-- Shown on the splash screen at first startup -->
+    <string name="splash_text">
+\n\n\n\n\n\n\n\n
+TIP:  Long press ^ at bottom center of screen for alternate menu.
+    </string>
+
+    <!-- Shown when a game is won -->
+    <string name="win_text">You Win!\n\nUse the menu to start a new game.</string>
+
+    <!-- Messages shown on the help window -->
+
+    <!-- The argument is the version number of the SolitaireCG application -->
+    <string name="help_window_title">SolitaireCG %s Help</string>
+    <string name="readme_header">README file from source code</string>
+    <string name="copying_header">COPYING file from source code</string>
+
+    <!-- Messages shown on the stats window -->
+
+    <string name="accept">Accept</string>
+    <string name="clear">Clear Stats</string>
+
+    <!-- The argument is the pretty game name, such as "Klondike (Dealing Three)" or "Golf" -->
+    <string name="stats_for_game">%s Statistics</string>
+
+    <string name="stats_wins_and_attempts">Wins: %1$d Attempts: %2$d</string>
+    <string name="stats_winning_percentage">Winning Percentage: %s%%</string>
+    <string name="stats_fastest_time">Fastest Time: %s</string>
+
+    <!-- The argument is the user's high score as an integer -->
+    <string name="stats_high_score">High Score: %s</string>
+</resources>

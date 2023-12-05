@@ -1,0 +1,389 @@
+<p>
+<b>Solitaire</b> <b>C</b>ard <b>G</b>ames for Android&trade; offers
+several single player card games for your enjoyment.
+</p>
+<p>
+<a href="#general">General</a><br>
+<a href="#terms">Terminology</a><br>
+ &nbsp; <a href="#bakersgame">Baker's Game</a><br>
+ &nbsp; <a href="#blackwidow">Black Widow</a><br>
+ &nbsp; <a href="#fortythieves">Forty Thieves</a><br>
+ &nbsp; <a href="#freecell">Freecell</a><br>
+ &nbsp; <a href="#golf">Golf</a><br>
+ &nbsp; <a href="#golf-wrapcards">Golf (wrap cards)</a><br>
+ &nbsp; <a href="#klondike-deal1">Klondike (deal 1)</a><br>
+ &nbsp; <a href="#klondike-deal3">Klondike (deal 3)</a><br>
+ &nbsp; <a href="#spider">Spider</a><br>
+ &nbsp; <a href="#tarantula">Tarantula</a><br>
+ &nbsp; <a href="#tripeaks">TriPeaks</a><br>
+ &nbsp; <a href="#tripeaks-wrapcards">TriPeaks (wrap cards)</a><br>
+ &nbsp; <a href="#vegas-deal1">Vegas (deal 1)</a><br>
+ &nbsp; <a href="#vegas-deal3">Vegas (deal 3)</a><br>
+<a href="#readme">README</a><br>
+<a href="#copying">COPYING</a><br>
+</p>
+
+<h2 id="general">General</h2>
+<p>
+SolitaireCG features the following game play navigation:
+</p>
+<ul style="list-style: none;">
+  <li><b>Moving</b><br>
+    <i>Single Card</i> - Drag the card.<br>
+    <i>Whole Stack</i> - Drag the stack starting above the bottom
+      card.<br>
+    <i>Partial Stack</i> - Tap the stack, scroll to adjust, then drag
+      the top card.<br><br>
+  </li>
+  <li><b>Auto Move</b><br>
+    Fling a card to start a chain of moving cards to their
+    home.<br><br>
+  </li>
+  <li><b>Dealing</b><br>
+    Tap the deck, or click the trackball or search key.<br><br>
+  </li>
+  <li><b>Undo</b><br>
+    Push the back button.<br><br>
+  </li>
+  <li><b>Menu</b><br>
+    Use either standard Android menu, or long press bottom center of
+    screen for alternate menu.<br><br>
+  </li>
+</ul>
+<p>
+Game play may be customized with the following options:
+</p>
+<ul style="list-style: none;">
+  <li><b>Large Card Art</b><br>
+    Enable or disable use of simple card art for improved
+    visability.<br><br>
+  </li>
+  <li><b>Display Time</b><br>
+    Enable or disable display of time elapsed.<br><br>
+  </li>
+  <li><b>Auto Move</b><br>
+    <i>Always</i> - will automatically move cards to foundations.<br>
+    <i>Fling Only</i> - will start a chain of moving cards to
+    foundations if you fling a card.<br>
+    <i>Never</i> - will not automatically move cards.  All cards must
+    be moved manually.<br><br>
+  </li>
+  <li><b>Lock Landscape</b><br>
+    Enable or disable lock to keep game in landscape orientation.<br><br>
+  </li>
+</ul>
+<p>
+Current game statistics are available, such as wins and losses.
+</p>
+<a href="#top">Back to top</a>
+
+<h2 id="terms">Terminology</h2>
+<p>
+A card game contains one or more card decks of 52 cards each.
+</p>
+<p>
+Each deck contains four suits: Clubs &clubs;,
+Diamonds <font color="red">&diams;</font>,
+Hearts <font color="red">&hearts;</font>, and Spades &spades;.
+</p>
+<p>
+Each suit contains thirteen card types with the following ascending
+order: Ace, 2, 3, 4, 5, 6, 7, 8, 9, 10, Jack, Queen, and King.
+</p>
+<p>
+The purpose of solitaire card games generally involves manipulating a
+layout of cards with the goal of sorting the cards in some manner.
+</p>
+<p>
+Several terms are helpful to describe solitaire card games:
+</p>
+<p>
+<b id="stock">Stock</b><br>
+A pile of cards that can be drawn upon during the game, usually one
+card at a time.
+</p>
+<p>
+<b id="waste">Waste</b><br>
+A pile where discarded cards are stored, usually so that these may be
+used later in the game.
+</p>
+<p>
+<b id="foundation">Foundation</b><br>
+A pile of cards that is built upon a base card, usually in an
+ascending sequence of the same card suit.
+</p>
+<p>
+<b id="tableau">Tableau</b><br>
+A temporary working pile where you build groups of cards in some
+sequence before you are able to move the cards to a foundation.
+</p>
+<p>
+<b id="build">Build</b><br>
+An ordered sequence of cards that may be partial or full (13 in
+sequence cards).
+</p>
+<a href="#top">Back to top</a>
+
+<h2 id="bakersgame">Baker's Game</h2>
+<p>
+Play is the similar to <a href="#freecell">Freecell</a> except
+tableaus build down in suit.
+</p>
+<a href="#top">Back to top</a>
+
+<h2 id="blackwidow">Black Widow</h2>
+<p>
+Play is the same as <a href="#spider">Spider</a> except there is only
+one suit.  Less suits is easier to play.  See also <a
+href="#tarantula">Tarantula</a>.
+</p>
+<a href="#top">Back to top</a>
+
+<h2 id="fortythieves">Forty Thieves</h2>
+<p>
+A widely known two deck solitaire game.
+</p>
+<p>
+<b>Layout</b><br>
+Eight foundations in upper left.  Further right are the stock and the
+waste.  On the row below are ten tableaus, each contain four face-up
+cards.
+</p>
+<p>
+<b>Play</b><br>
+Tableaus build down in suit order.  Single cards may be moved among
+the tableaus.  Empty tableaus may be filled with any card.
+</p>
+<p>
+Tap the stock to turn over one card at a time to the waste.  The top
+card in the waste may be played on tableaus or foundations.
+</p>
+<p>
+Foundations build up in suit from the Ace.
+</p>
+<p>
+<b>Goal</b><br>
+Move all cards to the foundations.
+</p>
+<a href="#top">Back to top</a>
+
+<h2 id="freecell">Freecell</h2>
+<p>
+A classic single deck solitaire game.
+</p>
+<p>
+<b>Layout</b><br>
+Four stocks in upper left with four foundations to the right.  On the
+row below are eight tableaus.  The left four tableaus contain 7 face-up
+cards and the right four tableaus contain 6 face-up cards.
+</p>
+<p>
+<b>Play</b><br>
+Tableaus build down in alternating colors.  Single cards may be moved
+among tableaus.  Empty tableaus may be filled with any card.
+</p>
+<p>
+Stocks hold any single card.
+</p>
+<p>
+Foundations build up in suit from the Ace.
+</p>
+<p>
+<b>Goal</b><br>
+Move all cards to the foundations.
+</p>
+<p>
+<b>Variations</b><br>
+<i>Build Order</i> - Tableaus build down either: <i>(Freecell)</i> by
+alternating color, or <i><a href="#bakersgame">Baker's Game</a></i> by
+suit.
+</p>
+<a href="#top">Back to top</a>
+
+<h2 id="golf">Golf</h2>
+<p>
+Count up and down and try to end with 4 or fewer cards showing.  The
+analogy with golf is the number of cards left in the tableaus after
+finishing the hand are golf strokes, and each game is a golf hole.
+</p>
+<p>
+<b>Layout</b><br>
+Stock in upper right with waste to the left.  On the row below, seven
+tableaus each contain five face-up cards.
+</p>
+<p>
+<b>Play</b><br>
+Waste builds up or down regardless of suit.  A king may not be built upon.
+</p>
+<p>
+Tableaus do not allow building.  Top cards can only be moved to the waste.
+</p>
+<p>
+Tap the stock to turn up one card onto the waste.
+</p>
+<p>
+<b>Goal</b><br>
+Empty all tableaus.
+</p>
+<a href="#top">Back to top</a>
+
+<h2 id="golf-wrapcards">Golf (wrap cards)</h2>
+<p>
+Play is similar to <a href="#golf">Golf</a> but easier.  The key
+difference is that a King may be built upon.  Play is allowed to wrap
+from King to Ace and vice versa which is known as
+"turning-the-corner".
+</p>
+<a href="#top">Back to top</a>
+
+<h2 id="klondike-deal1">Klondike (deal 1)</h2>
+<p>
+Play is similar to <a href="#klondike-deal3">Klondike (deal 3)</a>.
+The key difference is that cards are dealt from the stock one at a
+time.
+</p>
+<a href="#top">Back to top</a>
+
+<h2 id="klondike-deal3">Klondike (deal 3)</h2>
+<p>
+Probably the most popular single deck solitaire game.  Also known as
+solitaire or patience.
+</p>
+<p>
+<b>Layout</b><br>
+Stock in upper left with waste to the right.  Further to the right are
+four foundations.  On the row below, seven tableaus each contain a
+face-up card.  Each adjacent tableau to the right contains one more
+hidden card than the tableau to the left.
+</p>
+<p>
+<b>Play</b><br>
+Tableaus build down in alternating colors.  Full or partial builds may
+be moved among the tableaus.  Empty tableaus may be filled with Kings
+or builds beginning with Kings.
+</p>
+<p>
+Top card from the waste pile may be played on tableaus or foundations.
+</p>
+<p>
+Foundations build up in suit from the Ace.
+</p>
+<p>
+Tap the stock to turn up three cards onto the waste.  Tap the empty
+stock to start through the stock again.
+</p>
+<p>
+<b>Goal</b><br>
+Move all cards to the foundations.
+</p>
+<p>
+<b>Variations</b><br>
+<i>Stock Deal</i> - Turn up from the stock either: <i>(deal 1)</i> one
+card at at time, or <i>(deal 3)</i> three cards at a time.<br>
+<i>Style</i> - Go through the stock either: <i>(Klondike)</i> infinite
+times, or <i>(<a href="#vegas-deal1">Vegas</a>)</i> only once and keep
+score.
+</p>
+<a href="#top">Back to top</a>
+
+<h2 id="spider">Spider</h2>
+<p>
+One of the most popular two deck solitaire games.
+</p>
+<p>
+<b>Layout</b><br>
+Ten tableaus each contain a face up card.  The left four tableaus have
+5 hidden cards, and the right six tableaus have 4 hidden cards.  A
+stock containing 50 cards is in the lower left screen corner.
+</p>
+<p>
+<b>Play</b><br>
+Tableaus build down regardless of suit or color.  Full or partial
+builds in suit may be moved among the tableaus.  Empty tableaus may be
+filled with any available build.
+</p>
+<p>
+Builds of thirteen cards, in suit from King down to Ace will be
+automatically removed.
+</p>
+<p>
+Tap the deck to turn up one card on to each tableau.
+</p>
+<p>
+<b>Goal</b><br>
+Arrange all cards in builds in suit from King down to Ace.
+</p>
+<p>
+<b>Variations</b><br>
+<i><a href="#blackwidow">Black Widow</a></i> - Use one suit only.  Less
+suits is easier to play.<br>
+<i><a href="#tarantula">Tarantula</a></i> - Use two suits.<br>
+<i>Spider</i> -  Use four suits.
+</p>
+<a href="#top">Back to top</a>
+
+<h2 id="tarantula">Tarantula</h2>
+<p>
+Play is the same as <a href="#spider">Spider</a> except there are only
+two suits.  See also <a href="#blackwidow">Black Widow</a>.
+</p>
+<a href="#top">Back to top</a>
+
+<h2 id="tripeaks">TriPeaks</h2>
+<p>
+Count up and down and try to remove all three peaks.
+</p>
+<p>
+<b>Layout</b><br>
+Stock in upper right with waste to the left.  On the rows below, are
+three pyramids which comprise the tableaus.
+</p>
+<p>
+<b>Play</b><br>
+Waste builds up or down regardless of suit.  A king may not be built upon.
+</p>
+<p>
+Tableaus do not allow building.  Top cards can only be moved to the waste.
+</p>
+<p>
+Tap the stock to turn up one card onto the waste.
+</p>
+<p>
+<b>Goal</b><br>
+Empty all tableaus.
+</p>
+<a href="#top">Back to top</a>
+
+<h2 id="tripeaks-wrapcards">TriPeaks (wrap cards)</h2>
+<p>
+Play is similar to <a href="#tripeaks">TriPeaks</a> but easier.  The
+key difference is that a King may be built upon.  Play is allowed to
+wrap from King to Ace and vice versa which is known as
+"turning-the-corner".
+</p>
+<a href="#top">Back to top</a>
+
+<h2 id="vegas-deal1">Vegas (deal 1)</h2>
+<p>
+Play is similar to <a href="#klondike-deal3">Klondike (deal 3)</a>.
+The key differences are that cards are dealt from the stock one at a
+time, and only one pass through the stock is permitted.<br>
+<br>
+Virtual currency is used to track score.  A new game costs the player
+$52, or $1 per card in the deck.  The player is paid $5 for each card
+placed on a foundation built from ace up.  The score is cumulative
+over consecutively played games.  The score is reset when a different
+type of game is selected, for example <i>Golf</i>.
+</p>
+<a href="#top">Back to top</a>
+
+<h2 id="vegas-deal3">Vegas (deal 3)</h2>
+<p>
+Play is similar to <a href="#klondike-deal3">Klondike (deal 3)</a>.
+The key difference is that only three passes through the stock are
+permitted.<br>
+<br>
+Virtual currency is used to track score similar to
+<a href="#vegas-deal1">Vegas (deal 1)</a>.
+</p>
+<a href="#top">Back to top</a>
