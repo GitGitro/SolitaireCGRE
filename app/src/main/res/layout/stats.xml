@@ -25,7 +25,7 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content">
 
-    <TextView android:id="@+id/text_title"
+    <com.google.android.material.textview.MaterialTextView android:id="@+id/text_title"
       android:layout_width="fill_parent"
       android:layout_height="wrap_content"
       android:text="@string/solitaire_layout_text_text"
@@ -33,7 +33,7 @@
       android:textSize="20sp"
       android:gravity="center"
     />
-    <TextView android:id="@+id/text_wins"
+    <com.google.android.material.textview.MaterialTextView android:id="@+id/text_wins"
       android:layout_width="fill_parent"
       android:layout_height="wrap_content"
       android:text="@string/solitaire_layout_text_text"
@@ -41,7 +41,7 @@
       android:textSize="20sp"
       android:gravity="center"
     />
-    <TextView android:id="@+id/text_percentage"
+    <com.google.android.material.textview.MaterialTextView android:id="@+id/text_percentage"
       android:layout_width="fill_parent"
       android:layout_height="wrap_content"
       android:text="@string/solitaire_layout_text_text"
@@ -49,7 +49,7 @@
       android:textSize="20sp"
       android:gravity="center"
     />
-    <TextView android:id="@+id/text_best_time"
+    <com.google.android.material.textview.MaterialTextView android:id="@+id/text_best_time"
       android:layout_width="fill_parent"
       android:layout_height="wrap_content"
       android:text="@string/solitaire_layout_text_text"
@@ -57,7 +57,7 @@
       android:textSize="20sp"
       android:gravity="center"
     />
-    <TextView android:id="@+id/text_high_score"
+    <com.google.android.material.textview.MaterialTextView android:id="@+id/text_high_score"
       android:layout_width="fill_parent"
       android:layout_height="wrap_content"
       android:text="@string/solitaire_layout_text_text"
@@ -65,7 +65,7 @@
       android:textSize="20sp"
       android:gravity="center"
     />
-    <TextView android:id="@+id/empty"
+    <com.google.android.material.textview.MaterialTextView android:id="@+id/empty"
       android:layout_width="fill_parent"
       android:layout_height="wrap_content"
       android:text="@string/solitaire_layout_text_text"
@@ -79,14 +79,16 @@
       android:layout_width="fill_parent"
       android:gravity="center"
       android:layout_height="wrap_content">
-      <Button android:id="@+id/button_accept"
+      <com.google.android.material.button.MaterialButton android:id="@+id/button_accept"
         android:text="@string/accept"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
-      <Button android:id="@+id/button_clear"
-        android:text="@string/clear"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+
+      <com.google.android.material.button.MaterialButton
+          android:id="@+id/button_clear"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/clear" />
 
     </LinearLayout>
   </LinearLayout>

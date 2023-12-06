@@ -22,6 +22,8 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import com.google.android.material.button.MaterialButton;
+import com.google.android.material.textview.MaterialTextView;
 
 
 public class Stats {
@@ -48,31 +50,31 @@ public class Stats {
       ratio = (float)wins / (float)attempts * 100.0f;
     }
 
-    TextView tv = (TextView)solitaire.findViewById(R.id.text_title);
+    TextView tv = (MaterialTextView)solitaire.findViewById(R.id.text_title);
     tv.setText(String.format(solitaire.getString(R.string.stats_for_game), rules.GetPrettyGameTypeString()) + "\n\n");
-    tv = (TextView)solitaire.findViewById(R.id.text_wins);
+    tv = (MaterialTextView)solitaire.findViewById(R.id.text_wins);
     tv.setText(String.format(solitaire.getString(R.string.stats_wins_and_attempts), wins, attempts));
-    tv = (TextView)solitaire.findViewById(R.id.text_percentage);
+    tv = (MaterialTextView)solitaire.findViewById(R.id.text_percentage);
     tv.setText(String.format(solitaire.getString(R.string.stats_winning_percentage), String.format("%.2f", ratio)));
     if (bestTime != -1) {
       int seconds = (bestTime / 1000) % 60;
       int minutes = bestTime / 60000;
-      tv = (TextView)solitaire.findViewById(R.id.text_best_time);
+      tv = (MaterialTextView)solitaire.findViewById(R.id.text_best_time);
       tv.setText(String.format(solitaire.getString(R.string.stats_fastest_time), String.format("%d:%02d", minutes, seconds)));
     }
     if (rules.HasScore()) {
-      tv = (TextView)solitaire.findViewById(R.id.text_high_score);
+      tv = (MaterialTextView)solitaire.findViewById(R.id.text_high_score);
       tv.setText(String.format(solitaire.getString(R.string.stats_high_score), highScore));
     }
 
 
-    final Button accept = (Button) solitaire.findViewById(R.id.button_accept);
+    final Button accept = (MaterialButton) solitaire.findViewById(R.id.button_accept);
     accept.setOnClickListener(new View.OnClickListener() {
       public void onClick(View v) {
         solitaire.CancelOptions();
       }
     });
-    final Button clear = (Button) solitaire.findViewById(R.id.button_clear);
+    final Button clear = (MaterialButton) solitaire.findViewById(R.id.button_clear);
     clear.setOnClickListener(new View.OnClickListener() {
       public void onClick(View v) {
         SharedPreferences.Editor editor = settings.edit();
