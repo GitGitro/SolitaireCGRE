@@ -2,7 +2,7 @@
   <img width="200" src="./.github/solitaire_cg_re_icon.png"/>
 </p>
 
-<h2 align="center" padding="100">Solitaire CG Revived</h2>
+<h1 align="center" padding="100">Solitaire CG Revived</h1>
 
 This is a fork of [SolitaireCG](https://sourceforge.net/projects/solitairecg/), made to be compatible with newer versions of Android.
 
@@ -11,7 +11,7 @@ I'm still a newbie so don't expect new features, I'm probably just gonna keep it
 Original ReadMe below ⬇️
 
 
-Updated README by Curtis Gedak
+## Updated README by Curtis Gedak
 ==============================
 
 SolitaireCG is Ken Magic's "Solitaire" adapted to work on devices with
