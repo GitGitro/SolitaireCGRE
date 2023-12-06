@@ -42,3 +42,26 @@ Thumbs.db
 
 # Mac OSX files
 .DS_Store
+
+*a.aab
+*.aar
+*.DS_Store
+*.hprof
+*.jks
+*.keystore
+*.log
+*.pyc
+.cxx/
+.DS_Stores
+.externalNativeBuild/
+.navigation/
+.project
+.vscode/
+app/.classpath
+app/.project
+app/.settings
+app/release/
+deploymentTargetDropDown.xml
+misc.xml
+out/
+proguard/
