@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="200" src="./solitaire_cg_re_icon.png"/>
+  <img width="200" src="./.github/solitaire_cg_re_icon.png"/>
 </p>
 
 <h2 align="center" padding="100">Solitaire CG Revived</h2>
