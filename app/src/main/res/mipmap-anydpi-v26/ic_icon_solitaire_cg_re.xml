@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@color/ic_icon_solitaire_cg_re_background"/>
+    <foreground android:drawable="@mipmap/ic_icon_solitaire_cg_re_foreground"/>
+    <monochrome android:drawable="@drawable/solitaire_cg_re_icon_monochrome"/>
+</adaptive-icon>
