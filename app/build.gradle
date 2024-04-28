@@ -39,7 +39,7 @@ android {
         targetCompatibility JavaVersion.VERSION_17
     }
     dependencies {
-        implementation('com.google.android.material:material:1.10.0')
+        implementation('com.google.android.material:material:1.11.0')
     }
 
     namespace 'net.sourceforge.solitaire_cg_re'
