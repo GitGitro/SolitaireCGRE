@@ -24,6 +24,7 @@ public class Deck {
 
   private Card[] mCard;
   private int mCardCount;
+  private CustomRandom mRand;
 
   public Deck(int decks) {
     Init(decks, 4);
@@ -49,6 +50,8 @@ public class Deck {
       }
     }
 
+    mRand = new CustomRandom();
+
     Shuffle();
     Shuffle();
     Shuffle();
@@ -73,14 +76,46 @@ public class Deck {
     int lastIdx = mCardCount - 1;
     int swapIdx;
     Card swapCard;
-    Random rand = new Random();
 
     while (lastIdx > 1) {
-      swapIdx = rand.nextInt(lastIdx);
+      swapIdx = mRand.nextInt(lastIdx);
       swapCard = mCard[swapIdx];
       mCard[swapIdx] = mCard[lastIdx];
       mCard[lastIdx] = swapCard;
       lastIdx--;
+    }
+  }
+}
+
+//PCG-32-XSH-RR Algorithm
+//See http://pcg-random.org
+//Also https://github.com/imneme/pcg-c-basic/blob/master/pcg_basic.c
+class CustomRandom {
+
+  private long mState;
+
+  CustomRandom(){
+    mState = System.nanoTime() ^ 181783497276652981L;
+  }
+
+  //pcg32_random_r()
+  int next() {
+    long oldstate = mState;
+    mState = oldstate * 6364136223846793005L + 1;
+    int xorshifted = (int) (((oldstate >>> 18) ^ oldstate) >>> 27);
+    int rot = (int)(oldstate >>> 59);
+    return (xorshifted >>> rot) | (xorshifted << ((-rot) & 31));
+  }
+  //pcg32_boundedrand_r()
+  int nextInt(final int bound){
+    //lack of unsigned division in Java prevents us from optimizing like the original
+    //so we do the modulo operations in 64-bit :(
+    final long lbound = (long) bound;
+    final long threshold = 0x100000000L % lbound;
+    for (;;) {
+      long r = (long)this.next() & 0x00000000FFFFFFFFL;
+      if (r >= threshold)
+        return (int) (r % bound);
     }
   }
 }
