@@ -25,15 +25,10 @@ import android.content.pm.PackageManager.NameNotFoundException;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.util.Log;
-import android.view.ContextMenu;
-import android.view.ContextMenu.ContextMenuInfo;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.SubMenu;
 import android.view.View;
 import android.view.Window;
 import android.widget.TextView;
-import android.widget.Toast;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 // Base activity class.
 public class SolitaireCGRE extends Activity {
@@ -78,6 +73,7 @@ public class SolitaireCGRE extends Activity {
   public void   ClearRestoreState() { mRestoreState = ""; }
   public String GetRestoreState() { return mRestoreState; }
   public void   SetRestoreState(String state) { mRestoreState = state; }
+  private BottomNavigationView bottomNavigationView;
 
   @Override
   public void onCreate(Bundle savedInstanceState) {
@@ -118,6 +114,32 @@ public class SolitaireCGRE extends Activity {
     } catch (NameNotFoundException e) {
       Log.e("SolitaireCG.java", e.getMessage());
     }
+
+    bottomNavigationView = findViewById(R.id.bottom_navigation);
+    bottomNavigationView.setOnNavigationItemSelectedListener(item -> {
+      switch (item.getItemId()) {
+        case R.id.nav_new:
+          mSolitaireView.InitGame(mSettings.getInt("LastType", Rules.KLONDIKE));
+          return true;
+        case R.id.nav_modes:
+          DisplayModes();
+          return true;
+        case R.id.nav_options:
+          DisplayOptions();
+          return true;
+        case R.id.nav_stats:
+          DisplayStats();
+          return true;
+        case R.id.nav_help:
+          DisplayHelp();
+          return true;
+        //case R.id.nav_exit:
+          //finish();
+          //return true;
+        default:
+          return false;
+      }
+    });
   }
 
   // Entry point for starting the game.
@@ -149,6 +171,7 @@ public class SolitaireCGRE extends Activity {
     }
   }
 
+  /*
   @Override
   public boolean onCreateOptionsMenu(Menu menu) {
     super.onCreateOptionsMenu(menu);
@@ -277,6 +300,7 @@ public class SolitaireCGRE extends Activity {
 
     return false;
   }
+
 
   // Alternate Menu
   // Invoked with long press and needed on some devices where Android
@@ -425,7 +449,7 @@ public class SolitaireCGRE extends Activity {
 
     return false;
   }
-
+*/
   @Override
   protected void onPause() {
     super.onPause();
@@ -473,6 +497,13 @@ public class SolitaireCGRE extends Activity {
   @Override
   public void onSaveInstanceState(Bundle outState) {
     super.onSaveInstanceState(outState);
+  }
+
+  public void DisplayModes(){
+    mSolitaireView.SetTimePassing(false);
+    SolitaireViewManager.setInstance(mSolitaireView);
+    Intent modesActivity = new Intent(this, Modes.class);
+    startActivity(modesActivity);
   }
 
   public void DisplayOptions() {

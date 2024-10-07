@@ -18,13 +18,13 @@ apply plugin: 'com.android.application'
 
 android {
 
-    compileSdk 34
+    compileSdk 35
     defaultConfig {
         applicationId "net.sourceforge.solitaire_cg_re"
         minSdkVersion 23
-        targetSdkVersion 34
-        versionCode 4100
-        versionName "4.1.0"
+        targetSdkVersion 35
+        versionCode 5000
+        versionName "5.0.0"
     }
 
     buildTypes {
@@ -39,7 +39,7 @@ android {
         targetCompatibility JavaVersion.VERSION_17
     }
     dependencies {
-        implementation('com.google.android.material:material:1.11.0')
+        implementation('com.google.android.material:material:1.12.0')
     }
 
     namespace 'net.sourceforge.solitaire_cg_re'

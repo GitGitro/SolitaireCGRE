@@ -146,6 +146,7 @@ public class SolitaireView extends View {
   }
 
   public void InitGame(int gameType) {
+    resetGameState();
     int oldScore = 0;
     String oldGameType = "None";
 
@@ -947,6 +948,14 @@ public class SolitaireView extends View {
   public void RefreshOptions() {
     mRules.RefreshOptions();
     SetDisplayTime(GetSettings().getBoolean("DisplayTime", true));
+  }
+
+  public void resetGameState() {
+    mMoveHistory.clear();
+    mWinningScore = 0;
+    mGameStarted = false;
+    mElapsed = 0;
+    mTimePaused = false;
   }
 }
 

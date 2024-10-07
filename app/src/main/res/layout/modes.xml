@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/modes_view"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_fortythieves"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mode_fortythieves" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_freecell"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mode_freecell" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_bakersgame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mode_bakersgame" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_golf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mode_golf" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_golf_wrapcards"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mode_golf_wrapcards" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_klondike_dealone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mode_klondike_dealone" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_klondike_dealthree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mode_klondike_dealthree" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_spider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mode_spider" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_tarantula"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mode_tarantula" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_blackwidow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mode_blackwidow" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_tripeaks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mode_tripeaks" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_tripeaks_wrapcards"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mode_tripeaks_wrapcards" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_vegas_dealone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mode_vegas_dealone" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_vegas_dealthree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/mode_vegas_dealthree" />
+
+    </LinearLayout>
+</ScrollView>

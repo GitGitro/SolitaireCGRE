@@ -63,10 +63,7 @@
     <string name="toast_no_undo_left">No undo left.</string>
 
     <!-- Shown on the splash screen at first startup -->
-    <string name="splash_text">
-\n\n\n\n\n\n\n\n
-TIP:  Long press ^ at bottom center of screen for alternate menu.
-    </string>
+    <string name="splash_text">Press anywhere to start \nPress new to start a new game</string>
 
     <!-- Shown when a game is won -->
     <string name="win_text">You Win!\n\nUse the menu to start a new game.</string>
@@ -92,4 +89,20 @@ TIP:  Long press ^ at bottom center of screen for alternate menu.
 
     <!-- The argument is the user's high score as an integer -->
     <string name="stats_high_score">High Score: %s</string>
+
+    <string name="mode_fortythieves">FortyThieves</string>
+    <string name="mode_freecell">Freecell</string>
+    <string name="mode_bakersgame">Bakersgame</string>
+    <string name="mode_golf">Golf</string>
+    <string name="mode_golf_wrapcards">Golf Wrapcards</string>
+    <string name="mode_klondike_dealone">Klondike Deal One</string>
+    <string name="mode_klondike_dealthree">Klondike Deal Three</string>
+    <string name="mode_spider">Spider</string>
+    <string name="mode_blackwidow">Blackwidow</string>
+    <string name="mode_tarantula">Tarantula</string>
+    <string name="mode_tripeaks">Tripeaks</string>
+    <string name="mode_tripeaks_wrapcards">Tripeaks Wrapcards</string>
+    <string name="mode_vegas_dealone">Vegas Deal One</string>
+    <string name="mode_vegas_dealthree">Vegas Deal Three</string>
+
 </resources>

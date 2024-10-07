@@ -34,5 +34,7 @@
         </activity>
         <activity android:name=".Help" >
         </activity>
+        <activity android:name=".Modes" >
+        </activity>
     </application>
 </manifest>
