@@ -4,6 +4,7 @@ package net.sourceforge.solitaire_cg_re;
 import android.app.Activity;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.Button;
 
@@ -38,8 +39,8 @@ public class Modes extends Activity {
         Button buttonGolfWrapcards = modesView.findViewById(R.id.button_golf_wrapcards);
 
 
-        final SharedPreferences settings = getSharedPreferences("YourPreferences", MODE_PRIVATE);
-        final SharedPreferences.Editor editor = settings.edit();
+        final SharedPreferences mSettings = PreferenceManager.getDefaultSharedPreferences(this);
+        final SharedPreferences.Editor editor = mSettings.edit();
 
 
         buttonBlackWidow.setOnClickListener(v -> {

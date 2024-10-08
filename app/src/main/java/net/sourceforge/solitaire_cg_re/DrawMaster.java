@@ -1117,9 +1117,9 @@ public class DrawMaster {
       }
     }
     mTimePaint.setARGB(255, 20, 20, 20);
-    canvas.drawText(mTimeString, mScreenWidth-9, mScreenHeight-9, mTimePaint);
+    canvas.drawText(mTimeString, mScreenWidth-9, mScreenHeight-200, mTimePaint);
     mTimePaint.setARGB(255, 0, 0, 0);
-    canvas.drawText(mTimeString, mScreenWidth-10, mScreenHeight-10, mTimePaint);
+    canvas.drawText(mTimeString, mScreenWidth-10, mScreenHeight-200, mTimePaint);
   }
 
   public void DrawAltMenuString(Canvas canvas, int gameType, String text) {
