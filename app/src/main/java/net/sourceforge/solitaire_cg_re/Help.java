@@ -17,27 +17,32 @@
 package net.sourceforge.solitaire_cg_re;
 
 import android.app.Activity;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.content.pm.ActivityInfo;
 import android.preference.PreferenceManager;
 import android.view.KeyEvent;
 import android.view.Window;
 import android.webkit.WebView;
+import net.sourceforge.solitaire_cg_re.BuildConfig;
 
 public class Help extends Activity {
 
   // View extracted from help.xml
   private WebView mWebView;
 
+  private SharedPreferences mSettings;
+  // Shared preferences are where the various user settings are stored.
+  public SharedPreferences GetSettings() { return mSettings; }
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
 
-    // Force landscape for Android API < 14 (Ice Cream Sandwich)
-    //   Earlier versions do not change screen size on orientation change
-    if (   Integer.valueOf(android.os.Build.VERSION.SDK) < 14
-        || PreferenceManager.getDefaultSharedPreferences(this).getBoolean("LockLandscape", false)
-       ) {
+    // Get shared preferences
+    mSettings = getSharedPreferences("SolitairePreferences", 0);
+
+    // Force landscape if specified
+    if (mSettings.getBoolean("LockLandscape", false)) {
       setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
     }
 
@@ -70,7 +75,7 @@ public class Help extends Activity {
     //   mWebView.loadUrl("file:///android_res/raw/help_contents.txt");
     String helpText = "<html><body>"
       + "<a name=\"top\"></a>"
-      + "<h1>" + String.format(this.getString(R.string.help_window_title), SolitaireCGRE.VERSION_NAME) + "</h1>"
+      + "<h1>" + String.format(this.getString(R.string.help_window_title), BuildConfig.VERSION_NAME) + "</h1>"
       + Utils.readRawTextFile(this, R.raw.help_contents).replace("\n"," ")
         // Append README file
       + "<hr>"
@@ -93,14 +98,8 @@ public class Help extends Activity {
       + "<a href=\"#top\">Back to top</a>"
       + "</body></html>";
 
-    // Check for Android API <= 18 (Android 4.3 Jelly Bean) and load the
-    // help text using loadData instead.  The reason is because
-    // loadDataWithBaseURL() displays html as plain text on lower APIs.
-    if ( Integer.valueOf(android.os.Build.VERSION.SDK) <= 18 ) {
-      mWebView.loadData( helpText, "text/html; charset=utf-8", "utf-8");
-    } else {
-      mWebView.loadDataWithBaseURL("app:helpText", helpText, "text/html; charset=utf-8", "utf-8", "");
-    }
+    //Load web view
+    mWebView.loadDataWithBaseURL("app:helpText", helpText, "text/html; charset=utf-8", "utf-8", "");
   }
 
   // The following three methods attempt to maintain the user's

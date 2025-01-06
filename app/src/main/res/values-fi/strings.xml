@@ -45,16 +45,12 @@
     <!-- Shown on the options preference screen -->
     <string name="options_title">Asetukset</string>
     <string name="big_cards">Isot kortit</string>
-    <string name="big_cards_desc">Näytä yksinkertainen korttitaide näkyvyyden parantamiseksi</string>
     <string name="display_time">Näytä aika</string>
-    <string name="display_time_desc">Näytä pelin alkamisesta kulunut aika</string>
+    <string name="lock_landscape">Lukitse vaakatasoon</string>
     <string name="auto_move">Automaattinen siirto</string>
-    <string name="auto_move_desc">Automaattisesti siirrä mahdolliset kortit pinoihin</string>
     <string name="always">Aina</string>
     <string name="fling_only">Vain heilautettaessa</string>
     <string name="never">Ei koskaan</string>
-    <string name="lock_landscape">Lukitse vaakatasoon</string>
-    <string name="lock_landscape_desc">Lukitse peli vaakasuunnassa</string>
 
     <!-- Shown in the game if needed -->
     <string name="toast_blank_menu">Tämä valikko on jätetty tarkoituksella tyhjäksi.</string>

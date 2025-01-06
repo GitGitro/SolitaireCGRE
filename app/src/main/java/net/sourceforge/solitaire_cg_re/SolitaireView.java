@@ -19,6 +19,7 @@ package net.sourceforge.solitaire_cg_re;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.content.res.Configuration;
 import android.graphics.Canvas;
 import android.graphics.PointF;
 import android.os.Bundle;
@@ -63,12 +64,14 @@ public class SolitaireView extends View {
   private CharSequence mWinText;
 
   private CardAnchor[] mCardAnchor;
-  private DisplayMetrics mMetrics;
+
   private boolean mIsLandscape;
   private DrawMaster mDrawMaster;
   private Rules mRules;
   private TextView mTextView;
   private AnimateCard mAnimateCard;
+  private int mWidthPixels;
+  private int mHeightPixels;
   private int mDpi;
 
   private MoveCard mMoveCard;
@@ -105,25 +108,17 @@ public class SolitaireView extends View {
     setLongClickable(true);
 
     // Get display properties
-    mMetrics = new DisplayMetrics();
-    WindowManager wm = (WindowManager)context.getSystemService(Context.WINDOW_SERVICE);
-    wm.getDefaultDisplay().getMetrics(mMetrics);
-    mDpi = mMetrics.densityDpi;
+    mWidthPixels = getResources().getSystem().getDisplayMetrics().widthPixels;
+    mHeightPixels = getResources().getSystem().getDisplayMetrics().heightPixels;
+    mDpi = (int) (getResources().getDisplayMetrics().density * 160f);
     // Some devices report incorrect DPI so fall back to default
     if (mDpi < 60)
       mDpi = 160;
 
     // Get screen orientation
-    int screenOrientation = ((WindowManager) context.getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay().getOrientation();
-    mIsLandscape = true;
-    if (   screenOrientation == Surface.ROTATION_0
-        || screenOrientation == Surface.ROTATION_180
-       ) {
-      mIsLandscape = false;
-    }
-
-    mDrawMaster = new DrawMaster(context, mMetrics.widthPixels,
-                                 mMetrics.heightPixels, mDpi);
+    mIsLandscape = (   getResources().getConfiguration().orientation
+                                == Configuration.ORIENTATION_LANDSCAPE );
+    mDrawMaster = new DrawMaster(context, mWidthPixels, mHeightPixels, mDpi);
     mMoveCard = new MoveCard();
     mSelectCard = new SelectCard();
     mViewMode = MODE_NORMAL;
@@ -133,7 +128,7 @@ public class SolitaireView extends View {
     mRefreshThread = new Thread(mRefreshHandler);
     mMoveHistory = new Stack<Move>();
     mUndoStorage = new Card[CardAnchor.MAX_CARDS];
-    mAnimateCard = new AnimateCard(this, mMetrics.widthPixels);
+    mAnimateCard = new AnimateCard(this, mWidthPixels);
     mSpeed = new Speed();
     mReplay = new Replay(this, mAnimateCard);
 
@@ -430,6 +425,12 @@ public class SolitaireView extends View {
         Refresh();
       }
       mTimePaused = false;
+
+      // We really really really want focus :)
+      setFocusable(true);
+      setFocusableInTouchMode(true);
+      requestFocus();
+
       return true;
       
     } catch (FileNotFoundException e) {
@@ -602,7 +603,7 @@ public class SolitaireView extends View {
     // Text mode only handles clickys
     if (mViewMode == MODE_TEXT) {
       if (event.getAction() == MotionEvent.ACTION_UP && mTextViewDown) {
-        SharedPreferences.Editor editor = GetSettings().edit();
+        SharedPreferences.Editor editor = mContext.getSharedPreferences("SolitairePreferences", 0).edit();
         editor.putBoolean("PlayedBefore", true);
         editor.commit();
         mTextViewDown = false;
@@ -645,10 +646,9 @@ public class SolitaireView extends View {
     //   and near bottom center of screen
     //   and in both game and win mode.
     if ( !mHasMoved &&
-         ( (mDownPoint.x > (mMetrics.widthPixels*4/11)) &&
-           (mDownPoint.x < (mMetrics.widthPixels*6/11))
+            ( (mDownPoint.x > (mWidthPixels*4/11)) && (mDownPoint.x < (mWidthPixels*6/11))
          ) &&
-         (mDownPoint.y > (mMetrics.heightPixels*5/7)) &&
+            (mDownPoint.y > (mHeightPixels*5/7)) &&
          ( mViewMode==MODE_NORMAL ||
            mViewMode==MODE_WIN || mViewMode==MODE_WIN_STOP
          )

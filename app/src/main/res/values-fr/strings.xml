@@ -42,17 +42,13 @@
 
     <!-- Shown on the options preference screen -->
     <string name="options_title">Options</string>
-    <string name="big_cards">Gros dessins</string>
-    <string name="big_cards_desc">Affiche des dessins simplifiés pour améliorer la visibilité</string>
     <string name="display_time">Afficher le temps</string>
-    <string name="display_time_desc">Montre le temps écoulé depuis le début de la partie</string>
+    <string name="big_cards">Gros dessins</string>
+    <string name="lock_landscape">Verrouiller en paysage</string>
     <string name="auto_move">Mouvement automatique</string>
-    <string name="auto_move_desc">Déplace automatiquement les cartes vers les fondations lorsque c\'est possible</string>
     <string name="always">Toujours</string>
     <string name="fling_only">Seulement en survolant</string>
     <string name="never">Jamais</string>
-    <string name="lock_landscape">Verrouiller en paysage</string>
-    <string name="lock_landscape_desc">Verrouille l\'orientation du jeu en paysage</string>
 
     <!-- Shown in the game if needed -->
     <string name="toast_blank_menu">Cet élément du menu est laissé intentionnellement vide.</string>

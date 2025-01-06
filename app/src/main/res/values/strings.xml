@@ -45,16 +45,12 @@
     <!-- Shown on the options preference screen -->
     <string name="options_title">Options</string>
     <string name="big_cards">Large Card Art</string>
-    <string name="big_cards_desc">Show simple card art for improved visibility</string>
     <string name="display_time">Display Time</string>
-    <string name="display_time_desc">Show elapsed time since game started</string>
+    <string name="lock_landscape">Lock Landscape</string>
     <string name="auto_move">Auto Move</string>
-    <string name="auto_move_desc">Automatically move possible cards to foundations</string>
     <string name="always">Always</string>
     <string name="fling_only">Fling Only</string>
     <string name="never">Never</string>
-    <string name="lock_landscape">Lock Landscape</string>
-    <string name="lock_landscape_desc">Lock game in landscape orientation</string>
 
     <!-- Shown in the game if needed -->
     <string name="toast_blank_menu">This menu item intentionally left blank.</string>

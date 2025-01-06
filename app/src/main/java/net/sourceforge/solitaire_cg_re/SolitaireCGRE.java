@@ -33,7 +33,6 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 // Base activity class.
 public class SolitaireCGRE extends Activity {
 
-  public static String VERSION_NAME = "";
 
   private static final int MENU_SELECT_GAME  = 1;
   private static final int MENU_NEW          = 2;
@@ -87,12 +86,10 @@ public class SolitaireCGRE extends Activity {
 
     // Get shared preferences
     mSettings = PreferenceManager.getDefaultSharedPreferences(this);
+    mSettings = getSharedPreferences("SolitairePreferences", 0);
 
-    // Force landscape for Android API < 14 (Ice Cream Sandwich)
-    //   Earlier versions do not change screen size on orientation change
-    if (   Integer.valueOf(android.os.Build.VERSION.SDK) < 14
-        || mSettings.getBoolean("LockLandscape", false)
-       ) {
+    // Force landscape if specified
+    if (mSettings.getBoolean("LockLandscape", false)) {
       setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
     }
 
@@ -108,12 +105,6 @@ public class SolitaireCGRE extends Activity {
     //StartSolitaire(savedInstanceState);
     registerForContextMenu(mSolitaireView);
 
-    // Set global variable for versionName
-    try {
-      VERSION_NAME = getPackageManager().getPackageInfo(getPackageName(), 0).versionName;
-    } catch (NameNotFoundException e) {
-      Log.e("SolitaireCG.java", e.getMessage());
-    }
 
     bottomNavigationView = findViewById(R.id.bottom_navigation);
     bottomNavigationView.setOnNavigationItemSelectedListener(item -> {
@@ -473,13 +464,11 @@ public class SolitaireCGRE extends Activity {
   @Override
   protected void onResume() {
     super.onResume();
-    mSettings = PreferenceManager.getDefaultSharedPreferences(this);
 
-    // Force landscape for Android API < 14 (Ice Cream Sandwich)
-    //   Earlier versions do not change screen size on orientation change
-    if (   Integer.valueOf(android.os.Build.VERSION.SDK) < 14
-        || mSettings.getBoolean("LockLandscape", false)
-       ) {
+    mSettings = getSharedPreferences("SolitairePreferences", 0);
+
+    // Force landscape if specified
+    if (mSettings.getBoolean("LockLandscape", false)) {
       setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
     } else {
       // Needed to clear orientation when lock landscape option not set
@@ -491,6 +480,8 @@ public class SolitaireCGRE extends Activity {
     // Restore previous state after configuration/orientation change
     if (GetRestoreState() == "STATS") {
       DisplayStats();
+    } else if (GetRestoreState() == "OPTIONS") {
+      DisplayOptions();
     }
   }
 
@@ -507,9 +498,9 @@ public class SolitaireCGRE extends Activity {
   }
 
   public void DisplayOptions() {
+    SetRestoreState("OPTIONS");
     mSolitaireView.SetTimePassing(false);
-    Intent settingsActivity = new Intent(this, Preferences.class);
-    startActivity(settingsActivity);
+    new Options(this, mSolitaireView.GetDrawMaster());
   }
 
   public void DisplayHelp() {
@@ -526,6 +517,13 @@ public class SolitaireCGRE extends Activity {
 
   public void CancelOptions() {
     ClearRestoreState();
+    // Force landscape if specified
+    if (mSettings.getBoolean("LockLandscape", false)) {
+      setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+      } else {
+      // Needed to clear orientation when lock landscape option not set
+      setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
+      }
     setContentView(mMainView);
     mSolitaireView.requestFocus();
     mSolitaireView.SetTimePassing(true);

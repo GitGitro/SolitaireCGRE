@@ -42,17 +42,13 @@
 
     <!-- Shown on the options preference screen -->
     <string name="options_title">Opcje</string>
-    <string name="big_cards">Duże karty</string>
-    <string name="big_cards_desc">Wyświetlaj uproszczone wzory kart dla zwiększonej czytelności</string>
     <string name="display_time">Pokaż czas</string>
-    <string name="display_time_desc">Wyświetlaj czas od rozpoczęcia gry</string>
+    <string name="big_cards">Duże karty</string>
+    <string name="lock_landscape">Wymuś poziomo</string>
     <string name="auto_move">Auto-uzupełnianie</string>
-    <string name="auto_move_desc">Jeżeli to możliwe, automatycznie przenoś karty na stosy</string>
     <string name="always">Zawsze</string>
     <string name="fling_only">Tylko przy wrzucaniu</string>
     <string name="never">Nigdy</string>
-    <string name="lock_landscape">Wymuś poziomo</string>
-    <string name="lock_landscape_desc">Wymusza wyświetlanie gry w trybie poziomym</string>
 
     <!-- Shown in the game if needed -->
     <string name="toast_blank_menu">Ten element menu pozostał celowo pusty.</string>

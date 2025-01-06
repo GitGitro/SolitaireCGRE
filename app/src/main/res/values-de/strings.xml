@@ -42,17 +42,13 @@
 
     <!-- Shown on the options preference screen -->
     <string name="options_title">Optionen</string>
-    <string name="big_cards">Große Kartenfarben</string>
-    <string name="big_cards_desc">Zeigt einfachere und größere Farben für bessere Erkennbarkeit</string>
     <string name="display_time">Zeit anzeigen</string>
-    <string name="display_time_desc">Zeigt die verstrichene Zeit des aktuellen Spiels</string>
+    <string name="big_cards">Große Kartenfarben</string>
+    <string name="lock_landscape">Breitformat-Sperre</string>
     <string name="auto_move">Auto-bewegen</string>
-    <string name="auto_move_desc">Mögliche Karten automatisch auf die Stapel bewegen</string>
     <string name="always">Immer</string>
     <string name="fling_only">Nur \'fling\'</string>
     <string name="never">Nie</string>
-    <string name="lock_landscape">Breitformat-Sperre</string>
-    <string name="lock_landscape_desc">Auf Breitformat-Orientierung fest einstellen</string>
 
     <!-- Shown in the game if needed -->
     <string name="toast_blank_menu">Menüpunkt absichtlich leer.</string>

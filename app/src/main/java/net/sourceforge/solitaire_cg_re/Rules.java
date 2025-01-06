@@ -107,7 +107,7 @@ public abstract class Rules {
   }
 
   public void RefreshOptions() {
-    mAutoMoveLevel = Integer.parseInt(mView.GetSettings().getString("AutoMoveLevel", "1" /* default - fling only */));
+    mAutoMoveLevel = mView.GetSettings().getInt("AutoMoveLevel", Rules.AUTO_MOVE_FLING_ONLY);
     mWasFling = false;
   }
 

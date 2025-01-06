@@ -14,7 +14,14 @@
   limitations under the License.
 */
 
-apply plugin: 'com.android.application'
+plugins {
+    id('com.android.application')
+    }
+
+repositories {
+    google()
+    mavenCentral()
+}
 
 android {
 
@@ -23,8 +30,8 @@ android {
         applicationId "net.sourceforge.solitaire_cg_re"
         minSdkVersion 23
         targetSdkVersion 35
-        versionCode 5100
-        versionName "5.1.0"
+        versionCode 5200
+        versionName "5.2.0"
     }
 
     buildTypes {
@@ -32,8 +39,17 @@ android {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.txt'
         }
+        debug {
+            applicationIdSuffix '.debug'
+            versionNameSuffix '-DEBUG'
+            resValue "string", "app_name", "SolitaireCGRE debug"
+        }
     }
 
+    buildFeatures {
+            compose = true
+            buildConfig = true
+        }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17

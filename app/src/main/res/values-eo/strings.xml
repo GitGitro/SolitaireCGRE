@@ -42,17 +42,13 @@
 
     <!-- Shown on the options preference screen -->
     <string name="options_title">Agordoj</string>
-    <string name="big_cards">Grandaj kartoj</string>
-    <string name="big_cards_desc">Montras simpligitajn kart-specojn por plibonigi videblecon</string>
     <string name="display_time">Montri tempon</string>
-    <string name="display_time_desc">Montras pasintan tempon ekde lud-starto</string>
+    <string name="big_cards">Grandaj kartoj</string>
+    <string name="lock_landscape">Devigi horizontalan</string>
     <string name="auto_move">Mem-movo</string>
-    <string name="auto_move_desc">Aŭtomate movas eblajn kartojn sur stakojn</string>
     <string name="always">Ĉiam</string>
     <string name="fling_only">Nur je surstakigo</string>
     <string name="never">Neniam</string>
-    <string name="lock_landscape">Devigi horizontalan</string>
-    <string name="lock_landscape_desc">Devigas montrado de ludo en horizontala orientiĝo</string>
 
     <!-- Shown in the game if needed -->
     <string name="toast_blank_menu">Tiu ĉi menuero estas intence malplena.</string>
