@@ -12,9 +12,15 @@ import androidx.annotation.Nullable;
 
 public class Modes extends Activity {
 
+    private SharedPreferences mSettings;
+    public SharedPreferences GetSettings() { return mSettings; }
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        mSettings = PreferenceManager.getDefaultSharedPreferences(this);
+        mSettings = getSharedPreferences("SolitairePreferences", 0);
 
         setContentView(R.layout.modes);
         View modesView = findViewById(R.id.modes_view);
@@ -39,7 +45,7 @@ public class Modes extends Activity {
         Button buttonGolfWrapcards = modesView.findViewById(R.id.button_golf_wrapcards);
 
 
-        final SharedPreferences mSettings = PreferenceManager.getDefaultSharedPreferences(this);
+
         final SharedPreferences.Editor editor = mSettings.edit();
 
 

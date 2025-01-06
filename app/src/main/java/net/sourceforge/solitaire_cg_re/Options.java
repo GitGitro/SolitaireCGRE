@@ -20,7 +20,6 @@ package net.sourceforge.solitaire_cg_re;
 import android.content.SharedPreferences;
 import android.view.KeyEvent;
 import android.view.View;
-import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.RadioButton;
 

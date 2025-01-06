@@ -20,11 +20,9 @@ import android.app.Activity;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.content.pm.ActivityInfo;
-import android.preference.PreferenceManager;
 import android.view.KeyEvent;
 import android.view.Window;
 import android.webkit.WebView;
-import net.sourceforge.solitaire_cg_re.BuildConfig;
 
 public class Help extends Activity {
 
