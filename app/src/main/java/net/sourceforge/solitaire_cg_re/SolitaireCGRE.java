@@ -17,7 +17,6 @@
 */
 package net.sourceforge.solitaire_cg_re;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
@@ -26,10 +25,15 @@ import android.preference.PreferenceManager;
 import android.view.View;
 import android.view.Window;
 import android.widget.TextView;
+
+import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.ViewModelProvider;
+
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 // Base activity class.
-public class SolitaireCGRE extends Activity {
+public class SolitaireCGRE extends AppCompatActivity {
 
 
   private static final int MENU_SELECT_GAME  = 1;
@@ -71,13 +75,16 @@ public class SolitaireCGRE extends Activity {
   public String GetRestoreState() { return mRestoreState; }
   public void   SetRestoreState(String state) { mRestoreState = state; }
   private BottomNavigationView bottomNavigationView;
+  private ConfigWrapper viewModel;
 
   @Override
   public void onCreate(Bundle savedInstanceState) {
+    EdgeToEdge.enable(this);
     super.onCreate(savedInstanceState);
 
+    viewModel = new ViewModelProvider(this).get(ConfigWrapper.class);
+    ConfigWrapper config = viewModel;
     // Recall last state before configuration/orientation change
-    ConfigWrapper config = (ConfigWrapper)getLastNonConfigurationInstance();
     if (config != null) {
       SetRestoreState(config.screen);
     }
@@ -452,12 +459,12 @@ public class SolitaireCGRE extends Activity {
   }
 
   // Capture state prior to configuration/orientation change
-  @Override
+  /*@Override
   public Object onRetainNonConfigurationInstance() {
     final ConfigWrapper config = new ConfigWrapper();
     config.screen = GetRestoreState();
     return config;
-  }
+  }*/
 
   @Override
   protected void onResume() {

@@ -16,7 +16,15 @@
 
 package net.sourceforge.solitaire_cg_re;
 
+import androidx.lifecycle.ViewModel;
+
 // Storage to maintain state over a configuration/orientation change
-public class ConfigWrapper {
+public class ConfigWrapper extends ViewModel {
   public String screen;
+
+  //private final ConfigWrapper config = new ConfigWrapper();
+
+  public String getConfig() {
+    return screen;
+  }
 }
