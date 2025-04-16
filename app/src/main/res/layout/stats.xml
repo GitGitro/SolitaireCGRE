@@ -18,7 +18,8 @@
   android:id="@+id/stats_view"
   android:orientation="vertical"
   android:layout_width="fill_parent"
-  android:layout_height="fill_parent">
+  android:layout_height="fill_parent"
+    android:paddingTop="50dp">
 
   <LinearLayout
     android:orientation="vertical"
@@ -89,6 +90,19 @@
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:text="@string/clear" />
+
+      <com.google.android.material.button.MaterialButton
+          android:id="@+id/button_export"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Export" />
+
+      <com.google.android.material.button.MaterialButton
+          android:id="@+id/button_import"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Import" />
+
 
     </LinearLayout>
   </LinearLayout>
